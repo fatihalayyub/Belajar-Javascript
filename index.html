@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
+   <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            },
+            fontFamily: {
+              Karla : ['Karla', 'sans-serif'],
+            },
+          }
+        }
+      }
+   </script>
+   <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+   <script src="https://cdn.tailwindcss.com"></script>
+</head>
+    <body>
+      <main class="h-full z-10 mt-[150px] mb-8 w-full md:py-0 py-10 md:px-0 px-6 flex flex-col items-center justify-center space-y-8 max-w-4xl mx-auto tails-selected-element">
+         <div class="relative">
+             <div class="w-full h-full absolute inset-0 bg-black rounded-xl translate-y-2 translate-x-2"></div>
+             <div class="rounded-xl relative z-20 pl-8 sm:pl-10 pr-8 sm:pr-16 py-8 border-[3px] border-gray-900 bg-[#fff4da]">
+                 <img src="https://cdn.devdojo.com/images/january2023/shape-1.png" class="absolute md:block hidden left-0 h-[4.5rem] w-[4.5rem] bottom-0 -translate-x-full ml-3">
+                 <h1 class="font-bold font-[Karla] text-[30px] mb-[5px] leading-tight">Generate a <span class="text-[30px] font-[Karla] font-bold text-[#4ADF86] block">Random Password</span> </h1>
+                 <h1 class="font-medium font-[Karla] text-[20px] mb-[10px] leading-tight">Never use an insecure password again.</h1>
+                 <div class="flex md:flex-row flex-col w-full h-full justify-center items-stretch space-y-5 md:space-y-0  md:space-x-5">
+                     <div class="relative w-full h-full">
+                         <div class="w-full h-full rounded bg-gray-900 translate-y-1 translate-x-1 absolute inset-0 z-10"></div>
+                         <div type="text" class="border-[3px] w-full relative z-20 border-gray-900 placeholder-gray-600 text-lg font-medium focus:outline-none py-3.5 px-6 rounded">
+                          <h1 id="password-1" class="font-bold text-black text-xl">Pw-1 : </h1>
+                         </div>
+                         <div class="w-full h-full rounded bg-gray-900 translate-y-1 translate-x-1 absolute inset-0 z-10"></div>
+                         <div type="text" class="border-[3px] w-full relative z-20 border-gray-900 placeholder-gray-600 text-lg font-medium focus:outline-none py-3.5 px-6 rounded">
+                          <h1 id="password-2" class="font-bold text-black text-xl">Pw-2 : </h1>
+                         </div>
+                     </div>
+                     <div class="relative w-auto flex-shrink-0 h-full group">
+                         <button onclick="generatePassword()" class="py-3.5 rounded lg:mt-[25px] px-6 group-hover:-translate-y-px group-hover:-translate-x-px ease-out duration-300 z-20 relative border-[3px] border-gray-900 font-medium bg-[#ffc480] tracking-wide text-lg flex-shrink-0 text-gray-900">Generate Password</button>
+                         <img src="https://cdn.devdojo.com/images/january2023/shape-2.png" class="absolute sm:translate-y-0 translate-y-full sm:mt-0 mt-16 w-16 right-0 translate-x-full top-0 h-16 mr-0">
+                     </div>
+                 </div>
+                 <p class="opacity-70 mt-4">* Password yang dibuat merupakan hasil dari random abjad</p>
+             </div>
+         </div>
+     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+    <script src="logic.js"></script>
+    </body>
+</html>
